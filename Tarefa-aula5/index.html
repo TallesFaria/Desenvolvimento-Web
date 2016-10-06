@@ -1,0 +1,45 @@
+<div ng-controller = "fessCntrl"> 
+ <form class="clearBoth"  ng-submit="submitExpense(expenseInfo)">
+    <div class="expenseDesc" ng-model="expenseInfo">
+        <div class="leftDesc">
+            <div class="item">
+                <label for="title">Type a word</label>
+                <input type="text" id="Palindrome" name="title" ng-model="expenseInfo.Palindrome"/>
+            </div>
+            
+        <!-- <div class="lowerSection">
+            <div class="expenseTable clearBoth">
+                <div class="tblHeader row">
+                    <div class="sNo">SNo.</div>
+                    <div class="email">Email</div>
+                    <div class="name">Name</div>
+                    <div class="share">Share</div>
+                    <div class="paid">Paid</div>
+                    <div class="owesTo">Owes To</div>
+                    <div class="getsFrom">Gets From</div>
+                    <div></div>
+                </div>
+                <div class="tblBody">
+                    <div class="row">
+                        <div class="sNo">1</div>
+                        <div class="email">gnehapk@gmail.com</div>
+                        <div class="name">Neha</div>
+                        <div class="share">700</div>
+                        <div class="paid">500</div>
+                        <div class="owesTo">200 to Sneha</div>
+                        <div class="getsFrom"></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="tblFooter clearBoth">
+                    <button id="addMember">Add Member</button>
+                </div>
+            </div>
+        </div> -->
+
+    </div> <!--end of expenseDesc-->
+    <input type="submit" value="Check Palindrome" class="clearBoth" />
+</form>
+    <pre>{{expenses|json}}</pre>
+    
+</div>
